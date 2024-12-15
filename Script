@@ -1,0 +1,49 @@
+local player = game.Players.LocalPlayer
+local character = player.Character
+
+
+function fly()
+    character.Humanoid.Fly 
+function stopFlying()
+    character.Humanoid.Fly = false
+end
+
+
+function speedBoost()
+    character.Humanoid.WalkSpeed = character.Humanoid.WalkSpeed * 2
+end
+
+-- Função 
+function normalSpeed()
+    character.Humanoid.WalkSpeed = 16 -- Velocidade padrão
+end
+
+
+function jump()
+    character.Humanoid:Jump(
+script.Parent.MouseButton1Click:Connect(fly) -- Ao clicar com o botão esquerdo, o personagem voa
+script.Parent.MouseButton2Click:Connect(stopFlying) -- Ao clicar com o botão direito, o personagem para de voar
+script.parent
+local player = game.Players.LocalPlayer
+
+
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.CoreGui
+
+local frame = Instance.new("Frame")
+frame.Parent = screenGui
+frame.Position = UDim2.new(0.5, -150, 0.5, -100)
+frame.Size = UDim2.new(0, 300, 0, 200)
+
+local buttonFly = Instance.new("TextButton")
+buttonFly.Parent = frame
+buttonFly.Position = UDim2.new(0.5, -75, 0, 20)
+buttonFly.Size = UDim2.new(0, 150, 0, 25)
+buttonFly.Text = "Voar"
+buttonFly.MouseButton1Click:Connect(fly)
+
+
+
+
+.Mousebutton3click:Connect(stopjumping)
